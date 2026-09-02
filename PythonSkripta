@@ -1,0 +1,25 @@
+import sys
+from scapy.all import *
+
+
+if len(sys.argv) != 2:
+    print("Upotreba: python ime_skripte.py [ON, OFF ili STATUS]")
+    sys.exit(1)
+
+# --- SETUP ---
+ip = "10.0.0.50"
+port = 8888
+unos = sys.argv[1]
+state = unos.upper() 
+
+# --- CREATING PACKAGE ---
+# Sending package layer by layer: IP layer -> UDP layer -> Raw content 
+package = IP(dst=ip) / UDP(dport=port) / Raw(load=state)
+
+# --- SENDING ---
+answer = sr1(package, timeout=2, verbose=False)
+
+if answer and answer.haslayer(Raw):
+    print("Relay status:", answer[Raw].load.decode())
+else:
+    print("No answer.")
