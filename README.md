@@ -52,7 +52,7 @@ Uz regulator su ugrađena četiri elektrolitska kondenzatora 47 µF / 16 V: dva 
 | Ukupno           | ----- | 165 mA     | 390 mA      |
 
 ### Povezivanje
-
+| ----- | -------------|
 | W5500 | Arduino Nano |
 | MOSI  | D11 (PB3)    |
 | MISO  | D12 (PB4)    |
