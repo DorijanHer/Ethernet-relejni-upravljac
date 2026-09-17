@@ -29,8 +29,8 @@ Napajanje je odvojeno od USB priključka računala: modul HUSB238 uspostavlja sa
 
 ### Popis komponenata
 
-| Komponenta 			          |        Količina 	   |
-
+| Komponenta 			                     |        Količina 	    |
+| --------------------------------------  | ---------------------  |
 | Arduino Nano V3 (ATmega328P)            |           1            |
 | WIZnet W5500 Ethernet modul             |           1            |
 | Relejni modul COM-RM01 (SRD-05VDC-SL-C) |           2            |
@@ -44,7 +44,7 @@ Izvod 3V3 na pločici Arduino Nano napaja se iz internog regulatora i može ispo
 Uz regulator su ugrađena četiri elektrolitska kondenzatora 47 µF / 16 V: dva paralelno na ulazu (5 V – GND) i dva paralelno na izlazu (3V3 – GND); izlazni kondenzator obvezan je za stabilnost regulatora. Sve komponente dijele zajedničku masu.
 
 | Komponenta       | Napon | Struja     | Max. struja |
-
+| ---------------  | ----- | ---------- |  ---------  |
 | W5500            | 3V3   | 130 mA     | 180 mA      |
 | Arduino Nano     | 5 V   | 30 mA      | 50 mA       |
 | 2× relejni modul | 5 V   | 0 mA       | 150 mA      |
