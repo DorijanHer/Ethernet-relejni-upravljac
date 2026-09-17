@@ -81,6 +81,7 @@ Glavna petlja izvodi se neblokirajuće, funkcijom `millis()` umjesto `delay()`, 
 
 ### EEPROM mapa
 | Adresa | Sadržaj                        |
+| ------ | --------------------------     |
 | 0–3    | IP adresa                      |
 | 4–7    | Subnet                         |
 | 8–13   | MAC adresa                     |
@@ -110,7 +111,7 @@ Link settings: Up 100/Full, MAC: AA:BB:CC:DD:EE:FF, IP: 10.0.0.50/255.255.255.0,
 ### UDP naredbe
 
 | Naredba | Učinak                | Odgovor  |
-
+| ------  | --------------------- | -------  |
 | ON      | Uključuje oba releja  | ON       |
 | OFF     | Isključuje oba releja | OFF      |
 | STATUS  | Ne mijenja stanje     | ON / OFF |
@@ -135,7 +136,7 @@ Ovisno o naredbi, releji će se upaliti ili ugasiti, a skripta ispisuje trenuta�
 ## Sadržaj repozitorija
 
 | Datoteka                       | Opis                                 |
-
+| ---------------------------    | ------------------------------       |
 | `EthernetLED.ino`              | Firmware za Arduino Nano             |
 | `ScriptRelay.py`               | Python skripta za slanje UDP naredbi |
 | `Kuciste5.stl`                 | 3D model kućišta                     |
