@@ -140,6 +140,6 @@ Ovisno o naredbi, releji će se upaliti ili ugasiti, a skripta ispisuje trenuta�
 | ---------------------------    | ------------------------------       |
 | `EthernetLED.ino`              | Firmware za Arduino Nano             |
 | `ScriptRelay.py`               | Python skripta za slanje UDP naredbi |
-| `Kuciste5.stl`                 | 3D model kućišta                     |
-| `Poklopac5.stl`                | 3D model poklopca                    |
+| `Kuciste.stl`                  | 3D model kućišta                     |
+| `Poklopac.stl`                 | 3D model poklopca                    |
 | `Zavrsni_Rad.docx`             | Završni rad                          |
